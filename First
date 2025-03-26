@@ -1,0 +1,17 @@
+#Задание1
+dict_1 = {1: 'a', 2: 'b'}
+dict_2 = {2: 'c', 4: 'd'}
+
+#Способ1
+def merge_dicts_update(d1, d2):
+
+  merged = d1.copy()
+  merged.update(d2)
+  return merged
+print("Задание 1:")
+print("Объединение словарей - 1 задание :", merge_dicts_update(dict_1, dict_2))
+
+#Способ 2
+dict_3 = dict_1.copy()
+dict_3.update(dict_2)
+print(f"Способ 2: {dict_3}")
